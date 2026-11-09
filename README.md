@@ -1,6 +1,6 @@
 # SAIC50 — web version / versión web
 
-Static build of [SAIC50](https://github.com/auroragonzalez/saic50), a Shiny
+Static build of [SAIC50](https://github.com/auroragonzalez/saic50-code), a Shiny
 application for estimating the IC50, compiled to WebAssembly with
 [Shinylive](https://posit-dev.github.io/r-shinylive/). It needs no Shiny
 Server: any static hosting service can serve this folder as it is
