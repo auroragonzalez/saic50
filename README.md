@@ -1,5 +1,7 @@
 # SAIC50 — web version / versión web
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24106193.svg)](https://doi.org/10.5281/zenodo.24106193)
+
 Static build of [SAIC50](https://github.com/auroragonzalez/saic50-code), a Shiny
 application for estimating the IC50, compiled to WebAssembly with
 [Shinylive](https://posit-dev.github.io/r-shinylive/). It needs no Shiny
