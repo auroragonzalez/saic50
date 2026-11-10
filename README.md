@@ -22,4 +22,17 @@ To test locally / *Para probar en local*:
 python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
+## Deployment / Despliegue
+
+webR compiles R to WebAssembly in the browser, so the server's
+`Content-Security-Policy`, if any, must allow `'unsafe-eval'` in `script-src`.
+Otherwise the app never finishes loading. The included `Dockerfile` and
+`nginx.conf` serve the site with nginx and a compatible CSP. In Coolify, use
+the **Dockerfile** build pack (not *Static*), port 80.
+
+*webR necesita `'unsafe-eval'` en `script-src` de la cabecera CSP; si el
+servidor no lo permite, la app se queda cargando. El `Dockerfile` y
+`nginx.conf` incluidos sirven la web con nginx y una CSP compatible. En
+Coolify: build pack **Dockerfile** (no *Static*), puerto 80.*
+
 Sección de Apoyo Estadístico (SAI), Universidad de Murcia. License: GPL-3.
